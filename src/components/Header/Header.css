@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c50b8;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header__home {
+  font-size: 28px;
+  margin: 15px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__title {
+  margin: 15px;
+}
+
+.header__about-me {
+  font-size: 24px;
+  margin: 15px;
+}
+
+.header__projects {
+  font-size: 24px;
+  margin: 15px;
+}
+
+.header__contact-me {
+  font-size: 24px;
+  margin: 15px;
+}

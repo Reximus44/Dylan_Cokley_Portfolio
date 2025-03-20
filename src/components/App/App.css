@@ -1,0 +1,11 @@
+.page {
+  background-color: rgb(226, 226, 226);
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: 100vh;
+}
