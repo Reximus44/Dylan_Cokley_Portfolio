@@ -3,4 +3,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 15px;
+}
+
+.projects__title {
+}
+
+.projects__description {
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.projects__item {
+  list-style-type: none;
+}
+
+.projects__item-title {
+  text-align: center;
+}
+
+.projects__item-description {
+  line-height: 30px;
+}
+
+.projects__item-img {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
 }

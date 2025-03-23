@@ -1,0 +1,39 @@
+.picture-modal {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture-modal_is-open {
+  visibility: visible;
+}
+
+.picture-modal__content {
+  height: 610px;
+  width: 610px;
+  /* max-width: 498px; */
+  background-color: #fff;
+  object-fit: contain;
+}
+
+.picture-modal__close-btn {
+
+}
+
+.picture-modal__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.picture-modal__description {
+    margin: 15px;
+    text-align: center;
+}
