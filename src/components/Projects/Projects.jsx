@@ -17,12 +17,13 @@ function Projects() {
         <li className="projects__item">
           <h2 className="projects__item-title">WTWR</h2>
           <p className="projects__item-description">
-            Pronounced “what to wear” this responsive full-stack project uses a
-            weather API to recommend users clothing that fits the current
-            weather by filtering out garments that don't fit the current
-            temperature and weather. Signed in users can also save and upload
-            their own clothing items as well as edit and update their profile
-            information. Built with React, Express.js, and mongo DB.
+            Pronounced “what to wear” this responsive full-stack project makes
+            use of a weather API to track the users local climate in order to
+            recommend appropriate clothing while filtering out garments that
+            don't match the current temperature and weather. Signed in users can
+            also save and upload their own clothing items as well as edit and
+            update their profile information. Built with React, Express.js, and
+            Mongo DB.
           </p>
           {projects.map((project) => (
             <img

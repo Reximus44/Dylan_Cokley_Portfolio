@@ -16,24 +16,26 @@
 }
 
 .picture-modal__content {
-  height: 610px;
-  width: 610px;
-  /* max-width: 498px; */
+  display: flex;
+  height: 630px;
+  width: 1000px;
   background-color: #fff;
   object-fit: contain;
+  flex-direction: column;
 }
 
 .picture-modal__close-btn {
-
+  right: 0;
+  top: 0;
 }
 
 .picture-modal__img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .picture-modal__description {
-    margin: 15px;
-    text-align: center;
+  margin: 15px;
+  text-align: center;
 }
