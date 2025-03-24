@@ -25,7 +25,7 @@ function Projects() {
             update their profile information. Built with React, Express.js, and
             Mongo DB.
           </p>
-          {projects.map((project) => (
+          {projects.WTWR.map((project) => (
             <img
               src={project.url}
               alt={project.title}
