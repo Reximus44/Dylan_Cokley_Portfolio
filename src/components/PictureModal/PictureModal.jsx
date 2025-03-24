@@ -7,9 +7,9 @@ function PictureModal({ image, onClose, modalIsOpen }) {
       onClick={onClose}
     >
       <div className="picture-modal__content">
-        <button className="picture-modal__close-btn" onClick={onClose}>
-          Close
-        </button>
+      <button className="picture-modal__close-btn" onClick={onClose}>
+        Close
+      </button>
         <img src={image.url} alt={image.title} className="picture-modal__img" />
         <p className="picture-modal__description">{image.description}</p>
       </div>

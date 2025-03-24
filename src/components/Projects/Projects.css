@@ -20,6 +20,12 @@
   padding: 0;
 }
 
+.projects__list-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .projects__item {
   list-style-type: none;
 }

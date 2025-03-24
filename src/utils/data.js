@@ -1,5 +1,5 @@
-const projects = [
-  (WTWR = [
+const projects = {
+  WTWR: [
     {
       title: "WTWR add garment modal",
       description: "Here we see the add garment modal.",
@@ -28,7 +28,8 @@ const projects = [
         import.meta.url
       ).href,
     },
-  ]),
-];
+  ],
+  "JP Map": [],
+};
 
 export default projects;

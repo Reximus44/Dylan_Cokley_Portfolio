@@ -25,23 +25,38 @@ function Projects() {
             update their profile information. Built with React, Express.js, and
             Mongo DB.
           </p>
-          {projects.WTWR.map((project) => (
-            <img
-              src={project.url}
-              alt={project.title}
-              className="projects__item-img"
-              onClick={() => {
-                setSelectedImage(project);
-                setModalIsOpen(true);
-              }}
-            />
-          ))}
+          <div className="projects__list-images">
+            {projects.WTWR.map((project) => (
+              <img
+                src={project.url}
+                alt={project.title}
+                className="projects__item-img"
+                onClick={() => {
+                  setSelectedImage(project);
+                  setModalIsOpen(true);
+                }}
+              />
+            ))}
+          </div>
         </li>
         <li className="projects__item">
           <h2 className="projects__item-title">Project 2</h2>
           <p className="projects__item-description">
             This is a description of project 2.
           </p>
+          <div className="projects__list-images">
+            {projects["JP Map"].map((project) => (
+              <img
+                src={project.url}
+                alt={project.title}
+                className="projects__item-img"
+                onClick={() => {
+                  setSelectedImage(project);
+                  setModalIsOpen(true);
+                }}
+              />
+            ))}
+          </div>
         </li>
         <li className="projects__item">
           <h2 className="projects__item-title">Project 3</h2>
