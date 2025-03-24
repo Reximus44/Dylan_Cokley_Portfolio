@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 4000,
   },
-  base: '/dylan_cokley_portfolio/'
+  base: '/Dylan_Cokley_Portfolio/'
 })
