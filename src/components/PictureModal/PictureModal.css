@@ -5,7 +5,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,18 +19,21 @@
   display: flex;
   height: 630px;
   width: 1000px;
-  background-color: #fff;
+  background-color: #000000;
   object-fit: contain;
   flex-direction: column;
   position: relative;
 }
 
 .picture-modal__close-btn {
+  border: none;
+  background-color: transparent;
   position: absolute;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   right: 0;
   bottom: calc(100% + 5px);
+  background-image: url(src/assets/red-close-icon.svg);
 }
 
 .picture-modal__img {
@@ -40,6 +43,8 @@
 }
 
 .picture-modal__description {
+  font-size: medium;
   margin: 15px;
   text-align: center;
+  color: white;
 }
