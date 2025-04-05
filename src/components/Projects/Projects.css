@@ -7,9 +7,14 @@
 }
 
 .projects__title {
+  font-size: 40px;
+  margin: 15px;
+  text-align: center;
 }
 
 .projects__description {
+  text-align: center;
+  font-size: 20px;
 }
 
 .projects__list {
@@ -24,6 +29,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 
 .projects__item {
@@ -38,11 +45,15 @@
   line-height: 30px;
   margin: 0 350px;
   text-align: center;
+  font-size: 20px;
 }
 
 .projects__item-img {
   width: 486px;
   height: 273px;
   margin: 56px;
-  object-fit: contain;
+  object-fit: fill;
+  border: 2px solid #6c50b8;
+  border-radius: 4px;
+  cursor: pointer;
 }

@@ -6,12 +6,18 @@ import PictureModal from "../PictureModal/PictureModal";
 function Projects() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState({
+    title: "",
+    description: "",
+    url: "#",
+  });
   return (
     <section className="projects">
       <h1 className="projects__title">Projects</h1>
       <p className="projects__description">
         Here are some of the projects I have worked on.
+        <br />
+        (Click on the images to see more details)
       </p>
       <ul className="projects__list">
         <li className="projects__item">
@@ -22,12 +28,14 @@ function Projects() {
             recommend appropriate clothing while filtering out garments that
             don't match the current temperature and weather. Signed in users can
             also save and upload their own clothing items as well as edit and
-            update their profile information. Built with React, Express.js, and
-            Mongo DB.
+            update their profile information.
+            <br />
+            Built with React, Express.js, and Mongo DB.
           </p>
           <div className="projects__list-images">
             {projects.WTWR.map((project) => (
               <img
+                key={project.title}
                 src={project.url}
                 alt={project.title}
                 className="projects__item-img"
@@ -50,11 +58,14 @@ function Projects() {
             see on a tour through the park. The site also features a weather API
             that shows the current weather and temperature of the approximate
             location of the island. (specifically the coastal capital of Costa
-            Rica: San José) Built with React and the Open Weather API.
+            Rica: San José).
+            <br />
+            Built with React and the Open Weather API.
           </p>
           <div className="projects__list-images">
-            {projects["JP Map"].map((project) => (
+            {projects.JP_Map.map((project) => (
               <img
+                key={project.title}
                 src={project.url}
                 alt={project.title}
                 className="projects__item-img"
@@ -67,22 +78,49 @@ function Projects() {
           </div>
         </li>
         <li className="projects__item">
-          <h2 className="projects__item-title">Project 3</h2>
+          <h2 className="projects__item-title">Spots</h2>
           <p className="projects__item-description">
-            This is a description of project 3.
+            The Spots project was an early project I worked on that featured a
+            simple image sharing design that allowed users to upload and share
+            images as well as upload and use a custom avatar. The site also made
+            use of a simple mock api that allowed changes made to the site to be
+            persistent.
+            <br />
+            Built with Javascript and a simple custom-built API.
           </p>
+          <div className="projects__list-images">
+            {projects.Spots.map((project) => (
+              <img
+                key={project.title}
+                src={project.url}
+                alt={project.title}
+                className="projects__item-img"
+                onClick={() => {
+                  setSelectedImage(project);
+                  setModalIsOpen(true);
+                }}
+              />
+            ))}
+          </div>
         </li>
       </ul>
-      {modalIsOpen && (
-        <PictureModal
-          modalIsOpen={modalIsOpen}
-          image={selectedImage}
-          onClose={() => {
-            setModalIsOpen(false);
-            setSelectedImage(null);
-          }}
-        />
-      )}
+      <p className="projects__description">
+        For an exhaustive list of all my work go&nbsp;
+        <a
+          href="https://github.com/Reximus44?tab=repositories"
+          className="projects__link"
+        >
+          here
+        </a>
+      </p>
+
+      <PictureModal
+        modalIsOpen={modalIsOpen}
+        image={selectedImage}
+        onClose={() => {
+          setModalIsOpen(false);
+        }}
+      />
     </section>
   );
 }
