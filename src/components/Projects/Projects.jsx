@@ -113,7 +113,6 @@ function Projects() {
           here
         </a>
       </p>
-
       <PictureModal
         modalIsOpen={modalIsOpen}
         image={selectedImage}

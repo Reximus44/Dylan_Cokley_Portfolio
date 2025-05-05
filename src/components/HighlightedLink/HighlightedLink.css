@@ -1,4 +1,12 @@
 .highlighted-link {
-  background-color: lavender;
-  border-radius: 6px;
+  background: linear-gradient(175deg, #4611da, #d7d4e0, #4611da);
+  border-radius: 4px;
+  border: 2px solid #370075;
+  display: block;
 }
+
+/* @media screen and (max-width: 530px) {
+  .highlighted-link {
+    display: none;
+  }
+} */

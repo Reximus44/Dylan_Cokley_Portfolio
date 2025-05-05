@@ -1,0 +1,28 @@
+.dropdown-modal {
+  background-color: rgb(226, 226, 226);
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.dropdown-modal_is-open {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.6s, opacity 0.6s;
+  border: 3px solid #370075;
+  border-radius: 4px;
+  border-top: none;
+  border-right: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dropdown-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 325px;
+  width: 200px;
+}

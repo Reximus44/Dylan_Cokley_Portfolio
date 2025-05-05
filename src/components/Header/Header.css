@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #6c50b8;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header__home {
@@ -19,6 +19,7 @@
 
 .header__title {
   margin: 15px;
+  text-align: center;
 }
 
 .header__about-me {
@@ -34,4 +35,41 @@
 .header__contact-me {
   font-size: 24px;
   margin: 15px;
+}
+
+.header__dropdown-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.header__dropdown-btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  background-image: url(src/assets/red-close-icon.svg);
+  background-color: transparent;
+  border: none;
+}
+
+.header__dropdown-btn-img {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(226, 226, 226);
+  object-fit: fill;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 530px) {
+  .header > .header__link {
+    display: none;
+  }
+  .header__dropdown-btn {
+    display: block;
+  }
 }

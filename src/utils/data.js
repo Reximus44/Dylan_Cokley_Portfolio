@@ -128,7 +128,7 @@ const projects = {
     },
     {
       title: "Spots image preview",
-      description: "Here me see a preview of an added image",
+      description: "Here we see a preview of an added image",
       url: new URL(
         "../assets/project-imgs/Spots/Spots_imagePreview.png",
         import.meta.url
