@@ -109,6 +109,7 @@ function Projects() {
         <a
           href="https://github.com/Reximus44?tab=repositories"
           className="projects__link"
+          target="_blank"
         >
           here
         </a>
